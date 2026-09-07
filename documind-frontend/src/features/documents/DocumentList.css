@@ -1,0 +1,75 @@
+.doc-list {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.doc-list h3 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.doc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.doc-card:hover {
+  background: white;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.doc-card-icon {
+  width: 48px;
+  height: 48px;
+  color: #667eea;
+}
+
+.doc-name {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.doc-date {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.doc-list-loading {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .doc-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .doc-grid {
+    grid-template-columns: 1fr;
+  }
+}

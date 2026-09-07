@@ -1,0 +1,40 @@
+public/
+  favicon.ico
+  robots.txt
+  sitemap.xml
+  apple-touch-icon.png
+
+.vite.config.ts
+index.html
+
+src/
+  assets/
+    logo.svg
+    background.jpg
+  components/
+    Button.tsx
+    Modal.tsx
+  features/
+    auth/
+      AuthForm.tsx
+      authSlice.ts
+      authApi.ts
+  pages/
+    Home.tsx
+    Profile.tsx
+  hooks/
+    useAuth.ts
+    useDebounce.ts
+  utils/
+    formatDate.ts
+    generateId.ts
+  lib/
+    axiosClient.ts
+    firebase.ts
+  styles/
+    globals.css
+    theme.css
+  router/
+    routes.tsx
+  App.tsx
+  main.tsx

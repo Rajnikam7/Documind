@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem 2rem;
+  color: white;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+.logo h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-left: 2.75rem;
+}
+
+.app-main {
+  flex: 1;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.intro {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.new-doc-btn {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #667eea;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-doc-btn:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.new-doc-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.app-footer {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 1.25rem 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 0.875rem;
+  }
+
+  .app-main {
+    padding: 2rem 1rem;
+  }
+
+  .intro h2 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .upload-section {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h2 {
+    font-size: 1.75rem;
+  }
+
+  .logo svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .logo h1 {
+    font-size: 1.35rem;
+  }
+}

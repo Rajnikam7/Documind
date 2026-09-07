@@ -1,0 +1,84 @@
+.home-page {
+  width: 100%;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.intro {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.new-doc-btn {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #667eea;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-doc-btn:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.new-doc-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .intro h2 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .upload-section {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h2 {
+    font-size: 1.75rem;
+  }
+}
